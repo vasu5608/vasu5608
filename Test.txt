@@ -2,3 +2,4 @@ infosis
 cognizant
 tcs
 capgemini
+hsbc
