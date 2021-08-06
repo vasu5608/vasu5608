@@ -1,0 +1,8 @@
+<aura:component>
+    <aura:attribute name="city" type="String"/>
+    <aura:attribute name="state" type="String"/>
+    <aura:attribute name="pincode" type="Integer"/>
+    shippingcity:{!v.city} <br/><br/>
+    shippingstate:{!v.state} <br/><br/>
+    shippingpincode:{!v.pincode} <br/><br/>
+</aura:component>

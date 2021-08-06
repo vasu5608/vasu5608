@@ -1,0 +1,21 @@
+<apex:page controller="AccountCtrl">
+<apex:form >
+      <apex:pageBlock id="pb"> 
+        <apex:pageBlockSection columns="1"> 
+                 <apex:pageBlockSectionItem >
+           <apex:outputPanel >
+<apex:outputLabel value="Account Name"/>
+  </apex:outputPanel>
+   <apex:outputPanel >
+     <apex:actionRegion >
+         <apex:InputText value="{!accName}"/> &nbsp; &nbsp;
+<apex:commandButton value="Search" action="{!rertriveAccountRecord}" rerender="pb"/>
+   </apex:actionRegion>
+     </apex:outputPanel>
+    </apex:pageBlockSectionItem>                                                                                     
+ <apex:inputField value="{!accObj.Industry}"/>
+  <apex:inputField value="{!accObj.Rating}"/>
+          </apex:pageBlockSection>
+   </apex:pageBlock> 
+     </apex:form>
+  </apex:page>

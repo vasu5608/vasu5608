@@ -1,0 +1,17 @@
+<aura:component >
+    <lightning:card title="Account" iconName="standard:account">
+        <aura:set attribute="actions">
+            <lightning:buttonGroup>
+                <lightning:button label="New"/>
+                <lightning:button label="Edit"/>
+                <lightning:buttonMenu iconName="utility:down" alternativeText="down">
+                    <lightning:menuItem label="Case"/>
+                    <lightning:menuItem label="Task"/>
+                    <lightning:menuItem label="Event"/>
+                </lightning:buttonMenu>
+            </lightning:buttonGroup>
+        </aura:set>
+        Employee Name : <br/><br/>
+        Employee age : <br/><br/>
+    </lightning:card>
+</aura:component>

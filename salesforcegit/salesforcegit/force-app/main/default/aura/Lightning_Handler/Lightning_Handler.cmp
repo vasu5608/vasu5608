@@ -1,0 +1,33 @@
+<aura:component>
+    <aura:attribute name="studentname" type="String"/>
+    <aura:attribute name="emailid" type="String"/>
+    <aura:attribute name="mobilenumber" type="String"/>
+    <aura:attribute name="studentmarks" type="Decimal"/>
+    <aura:handler name="init" value="{!this}" action="{!c.studentinfo}"/>
+    <lightning:card title="Student Information">
+        Student Name :{! v.studentname} <br/><br/>
+        Student EmailId :{! v.emailid} <br/><br/>
+        Student mobilenumber :{! v.mobilenumber} <br/><br/>
+        Student marks :{!v.studentmarks} <br/><br/>
+        <!--<div style="max-width: 400px;">
+        <lightning:inputAddress
+            addressLabel="Address"
+            streetLabel="Street"
+            cityLabel="City"
+            countryLabel="Country"
+            provinceLabel="Province"
+            postalCodeLabel="PostalCode"
+            street="121 Spear St."
+            city=""
+            country="US"
+            province="CA"
+            postalCode="94105"
+            required="true"
+            fieldLevelHelp="Help Text for inputAddress field"/>
+    </div>-->
+        <lightning:button label="Download student information" iconName="utility:download" iconPosition="left"/>
+        <lightning:button label="Edit student information" iconName="utility:edit" iconPosition="left"  variant="brand"/>
+        <lightning:button label="Delete student information" iconName="utility:delete" iconPosition="left" variant="destructive"/>
+    <lightning:button label="With Access Key 'x'" accesskey="x" onclick="{! c.handleClick }"/>
+    </lightning:card>
+</aura:component>

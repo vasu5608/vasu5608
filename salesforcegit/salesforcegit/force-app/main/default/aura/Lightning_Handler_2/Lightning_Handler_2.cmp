@@ -1,0 +1,16 @@
+<aura:component>
+    <aura:attribute name="studentname" type="String"/>
+    <aura:attribute name="emailid" type="String"/>
+    <aura:attribute name="mobilenumber" type="String"/>
+    <aura:attribute name="studentmarks" type="Decimal"/>
+    <aura:handler name="init" value="{!this}" action="{!c.studentinfo}"/>
+    <lightning:card title="Student Information">
+        Student Name :{! v.studentname} <br/><br/>
+        Student EmailId :{! v.emailid} <br/><br/>
+        Student mobilenumber :{! v.mobilenumber} <br/><br/>
+        Student marks :{!v.studentmarks} <br/><br/>
+        <lightning:button label="Download student information" iconName="utility:download" iconPosition="left"/>
+        <lightning:button label="Edit student information" iconName="utility:edit" iconPosition="left"  variant="brand"/>
+        <lightning:button label="Delete student information" iconName="utility:delete" iconPosition="left" variant="destructive"/>
+    </lightning:card>
+</aura:component>

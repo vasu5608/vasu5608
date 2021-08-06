@@ -1,0 +1,13 @@
+<aura:component >
+    <aura:attribute name="empName" type="String"/>
+    <aura:attribute name="age" type="Integer"/>
+    <aura:attribute name="salary" type="Decimal"/>
+    <aura:handler name="init" value="{!this}" action="{!c.callme}"/>
+    <lightning:card title="Employee">
+        Employee Name :{! v.empName} <br/>
+        Employee Age :{! v.age} <br/>
+        Employee salary :{! v.salary} <br/>
+        <lightning:button label="Download" iconName="utility:download" iconPosition="left" />
+        <lightning:button label="Download" iconName="utility:download" />
+    </lightning:card>
+</aura:component>

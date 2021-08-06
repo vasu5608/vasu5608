@@ -1,0 +1,12 @@
+<aura:component >
+    <aura:attribute name = "name"  type= "string"/>
+    <aura:attribute name= "age" type="Integer" default = "15"/>
+    <aura:attribute name= "emailid" type="string"/>
+    <aura:attribute name ="mobilenumber" type="string" required ="true"/>
+    <aura:attribute name="date" type="Date" />
+    name: {!v.name}  <br/>
+    age: {!v.age}    <br/>
+    emailid:{!v.emailid}   <br/>
+    mobilenumber:{!v.mobilenumber}  <br/>
+    date:{!v.date}  <br/>
+</aura:component>

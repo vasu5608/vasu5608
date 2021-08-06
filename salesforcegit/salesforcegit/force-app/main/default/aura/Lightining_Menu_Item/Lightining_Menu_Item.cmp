@@ -1,0 +1,13 @@
+<aura:component >
+    <lightning:buttonGroup>
+        <lightning:button label="New"/>
+        <lightning:button label="New Task"/>
+        <lightning:button label="New Event"/>
+        <lightning:buttonMenu iconName="utility:down" alternativeText="down">
+            <lightning:menuItem label="Account"/>
+            <lightning:menuItem label="Contact"/>
+            <lightning:menuItem label="Opportunity"/>
+            <lightning:menuItem label="Case"/>
+        </lightning:buttonMenu>
+    </lightning:buttonGroup>
+</aura:component>

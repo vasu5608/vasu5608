@@ -1,0 +1,15 @@
+<aura:component >
+    <lightning:buttonIcon iconName="utility:settings" alternativetext="Icon Not Found"/>
+    <lightning:buttonGroup>
+        <lightning:button label="submit"/>
+        <lightning:button label="Cancel"/>
+        <lightning:button label="Reset"/>
+        <lightning:buttonIcon iconName="utility:down" alternativetext="Icon Not Found" size="large"/>
+    </lightning:buttonGroup>
+    <br/><br/>
+    <lightning:buttonMenu>
+        <lightning:menuItem label="Account"/>
+        <lightning:menuItem label="Contact"/>
+        <lightning:menuItem label="Opportunity"/>
+    </lightning:buttonMenu>
+</aura:component>

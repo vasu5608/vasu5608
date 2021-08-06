@@ -1,0 +1,9 @@
+<aura:component >
+    Firstname: <br/> <br/> <br/>
+    Lastname: <br/> <br/>  <br/>
+    age: <br/> <br/>  <br/>
+    MaxSalary : <br/> <br/> <br/>
+    MinSalary : <br/> <br/> <br/>
+    City :<br/> <br/> <br/>
+    Country : <br/> <br/> <br/>
+</aura:component>

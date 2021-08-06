@@ -1,0 +1,6 @@
+<aura:component >
+    name : <br/>
+    age:    <br/>
+    mobile number :<br/>
+    email id : <br/> 
+</aura:component>

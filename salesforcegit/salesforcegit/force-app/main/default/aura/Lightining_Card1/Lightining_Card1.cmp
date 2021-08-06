@@ -1,0 +1,25 @@
+<aura:component >
+    <lightning:card iconName="standard:account">
+        <aura:set attribute="title">
+            Lead <br/>
+            <b> Vasu </b>
+        </aura:set>
+        <aura:set attribute="footer">
+            <lightning:buttonGroup>
+                <lightning:button label="Save"/>
+                <lightning:button label="Cancel"/>
+                <lightning:button label="Reset"/>
+                <lightning:buttonMenu iconName="utility:down" alternativeText="down">
+                    <lightning:menuItem label="Case"/>
+                    <lightning:menuItem label="Task"/>
+                    <lightning:menuItem label="Event"/>
+                </lightning:buttonMenu>
+            </lightning:buttonGroup>
+        </aura:set>
+        Last Name : <br/>
+        First Name: <br/>
+        Company : <br/>
+        Phone : <br/>
+        No of employees : <br/>
+    </lightning:card>
+</aura:component>

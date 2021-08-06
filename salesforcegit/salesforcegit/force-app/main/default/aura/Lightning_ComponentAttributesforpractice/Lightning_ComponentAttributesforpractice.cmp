@@ -1,0 +1,10 @@
+<aura:component >
+    <aura:attribute name ="firstname" type ="String" />
+    <aura:attribute name ="lastname" type ="String" />
+    <aura:attribute name ="age" type ="Integer" />	  
+    <lightning:input label="FirstName"  name ="firstname" type="String" value ="{!v.firstname}"/> <br/> <br/>
+    <lightning:input label="LastName"  name ="lastname" type="String" value ="{!v.lastname}"/> <br/> <br/>
+    <lightning:input label="Age"  type="Number" name ="age" value ="{!v.age}"/> <br/> <br/>
+    <lightning:button label ="save" onclick="{!v.savemethod}"/>
+    
+</aura:component>

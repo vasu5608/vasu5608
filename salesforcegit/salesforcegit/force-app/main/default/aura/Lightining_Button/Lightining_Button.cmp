@@ -1,0 +1,14 @@
+<aura:component >
+    <lightning:button label="Submit" iconposition="right"/>   <br/> <br/>
+    <lightning:button label="Title" title="Title Message" variant="onclick" /> <br/> <br/>
+    <lightning:button iconName="standard:Account" label="Account"/>  <br/> <br/>
+    <lightning:button iconName="action:download" iconposition="right" label="download"/>  <br/> <br/>
+    <lightning:button label="reset" disabled="true" iconposition="right"/>  <br/> <br/>
+    <lightning:button label="Account" variant="Base"/>  <br/> <br/>
+    <lightning:button label="Account" variant="Neutral"/>  <br/> <br/>
+    <lightning:button label="Account" variant="Brand" iconposition="right"/>  <br/> <br/>
+    <lightning:button label="Account" variant="Brand Outline"/>  <br/> <br/>
+    <lightning:button label="Account" variant="Destructive"/>   <br/> <br/>
+    <lightning:button label="Account" variant="Destructive Text"/>   <br/> <br/>
+    <lightning:button label="Account" variant="Success" iconposition="right"/>  <br/> <br/>
+</aura:component>

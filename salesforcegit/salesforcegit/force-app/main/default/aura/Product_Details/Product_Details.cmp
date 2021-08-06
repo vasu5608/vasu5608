@@ -1,0 +1,8 @@
+<aura:component>
+    <aura:attribute name="Name" type="String" description="This is a dell laptop"/>  
+    <aura:attribute name="price" type="Decimal" required="true"/>
+    <aura:attribute name="quantity" type="Integer"/>
+    productname:{!v.Name} <br/><br/>
+    prouductprice:{!v.price} <br/><br/>
+    productquantity:{!v.quantity} <br/><br/>
+</aura:component>

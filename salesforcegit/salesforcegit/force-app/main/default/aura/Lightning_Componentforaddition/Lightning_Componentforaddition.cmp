@@ -1,0 +1,14 @@
+<aura:component >
+    <aura:attribute name="firstnumber" type="Integer"/>
+    <aura:attribute name="lastnumber" type="Integer"/>
+    <aura:attribute name="result" type="Integer"/>
+    <lightning:input label="firstno" name="firstnumber" type="Number" value="{!v.firstnumber}"/> <br/> <br/>
+    <lightning:input label="secondno" name="lastnumber" type="Number" value="{!v.lastnumber}"/> <br/> <br/>
+    <lightning:input label="result" name="result"  type="Number" value="{!v.result}"/> <br/> <br/>
+    <lightning:buttongroup>
+        <lightning:button label ="add" onclick="{!c.addition}"/>
+        <lightning:button  label ="sub" onclick="{!c.subtraction}"/>
+        <lightning:button  label ="mul" onclick="{!c.multiply}"/>
+        <lightning:button  label ="div" onclick="{!c.divide}"/>
+    </lightning:buttongroup>    
+</aura:component>

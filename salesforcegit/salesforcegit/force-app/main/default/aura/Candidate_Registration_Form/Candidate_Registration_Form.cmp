@@ -1,0 +1,45 @@
+<aura:component controller="CandidateRegistrationForm" 
+                implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" 
+                access="global" >  
+    <aura:attribute name="FirstName" type="String" default=""  />
+    <aura:attribute name="LastName" type="String" default="" />
+    <aura:attribute name="CandidateName" type="String" default="" />
+    <aura:attribute name="MobilePhone" type="Integer" default=""  /> 
+    <aura:attribute name="currentlyemployed" type="boolean" default=""  />
+    <div class="slds-page-header">
+        <div class="slds-align_absolute-center" style="height:5rem">
+            <div class="slds-text-heading_large">
+                <div class="slds-m-top_xx-large">
+                    Candidate Registration Form
+                </div>
+            </div>
+        </div>
+        <br/><br/>
+        <div class="slds-align_absolute-center">
+            <div class="slds-size_3-of-12">
+                <lightning:input label="First Name" name="candidatefirstname" value="{!v.FirstName}"/>
+                <br/>
+                <lightning:input label="Last Name" name="candidatelastname" value="{!v.LastName}"/>
+                <br/>
+                <lightning:input label="Candidate Name" name="CandidateName" value="{!v.CandidateName}"/>
+                <br/>
+                <lightning:input label="Mobile Phone " name="MobilePhone" value="{!v.MobilePhone}"/>
+                <br/>  
+                <lightning:input label="Years Of Experience" name="YearsOfExperience" value="{!v.YearsOfExperience}"/>
+                <br/>
+                <div class="slds-form-element">
+                    <label class="slds-form-element__label" for="checkbox-unique-id-73">Form Element Label</label>
+                    <div class="slds-form-element__control">
+                        <span class="slds-checkbox slds-checkbox_standalone">
+                            <lightning:input type="checkbox" id="checkbox-unique-id-73" name="label" value="{!v.currentlyemployed}" />
+                            <span class="slds-checkbox_faux"></span>
+                        </span>
+                    </div>
+                </div>
+                <br/>
+                <lightning:button label="Submit" onclick="{!c.saveCandidateData}" ></lightning:button>
+                <lightning:button label="Cancel" onclick="{!c.callMe}"></lightning:button>
+            </div>
+        </div>
+    </div>
+</aura:component>

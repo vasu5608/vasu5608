@@ -1,0 +1,39 @@
+<aura:component controller="StudentRegistrationFormController" 
+                implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" 
+                access="global" >
+    
+    <aura:attribute name="FirstName" type="String" default="" />
+    <aura:attribute name="LastName" type="String" default="" />
+    <aura:attribute name="FatherName" type="String" default="" />
+    <aura:attribute name="Age" type="Integer" default="" />
+    <aura:attribute name="CourseName" type="String" default="" />
+    <aura:attribute name="TrainerName" type="String" default="" />
+    
+    <div class="slds-page-header">
+        <div class="slds-align_absolute-center" style="height:5rem">
+            <div class="slds-text-heading_large">
+                <div class="slds-m-top_xx-large">
+                    Student Registration Form
+                </div>
+            </div>
+        </div>
+        <br/><br/>
+        <div class="slds-align_absolute-center">
+            <div class="slds-size_3-of-12">
+                <lightning:input label="First Name" name="studentfirstname" value="{!v.FirstName}" />
+                <br/>
+                <lightning:input label="Last Name" name="studentlastname" value="{!v.LastName}" />
+                <br/>
+                <lightning:input label="Father Name" name="studentfathername" value="{!v.FatherName}" />
+                <br/>
+                <lightning:input label="Age" type="number" name="studentage" value="{!v.Age}"/>
+                <br/>
+                <lightning:input label="CourseName" type="String" name="CourseName" value="{!v.CourseName}"/>
+                <br/>
+                <lightning:input label="TrainerName" type="String" name="TrainerName" value="{!v.TrainerName}"/>
+                <br/>
+                <lightning:button label="Submit" onclick="{!c.saveStudentData}" ></lightning:button>
+            </div>
+        </div>
+    </div>
+</aura:component>

@@ -1,0 +1,8 @@
+<aura:component>
+    <aura:attribute name="LastName" type="string"/>
+    <aura:attribute name="FirstName" type="string"/>
+    <aura:attribute name="Phone" type="string"/>
+    LastName:{!v.LastName}    <br/>
+    FirstName:{!v.FirstName}  <br/>
+    Phone:{!v.Phone}          <br/>
+</aura:component>
