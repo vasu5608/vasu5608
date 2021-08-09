@@ -1,5 +1,5 @@
 public with sharing class vscode {
-    public examplemethod(){
+    public  void examplemethod(){
         System.debug('welcome to vs world');
     }
 
