@@ -5,9 +5,13 @@ public with sharing class vscode {
     public  void examplemethod2(){
         System.debug('welcome to vs world and git hub');
     }
-        public  void examplemethod2(){
+        public  void examplemethod3(){
         System.debug('welcome to git hub');
     }
+            public  void examplemethod4(){
+        System.debug('hello world');
+    }
+
 
 
     }
