@@ -11,6 +11,9 @@ public with sharing class vscode {
             public  void examplemethod4(){
         System.debug('hello world');
     }
+    public  void examplemethod5(){
+        System.debug('hello! welcome to developer world');
+    }
 
 
 
