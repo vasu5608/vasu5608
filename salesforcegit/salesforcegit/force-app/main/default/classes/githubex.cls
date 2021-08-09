@@ -5,5 +5,8 @@ public with sharing class githubex {
     public void method2(){
         System.debug('bye');
     }
+    public void method3(){
+        System.debug(' hello and bye');
+    }
 
 }
