@@ -14,7 +14,7 @@ public with sharing class vscode {
     public  void examplemethod5(){
         System.debug('hello! welcome to developer world');
     }
-
-
-
+        public  void examplemethod6(){
+        System.debug('addition of two numbers');
+    }
     }
