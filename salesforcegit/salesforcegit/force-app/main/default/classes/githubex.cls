@@ -20,4 +20,7 @@ public with sharing class githubex {
     public void method7(){
         System.debug('hello and bye and welcome to new world this is method7');
     }
+    public void method8(){
+        System.debug('hello and bye and welcome to new world this is method8');
+    }
 }
