@@ -8,5 +8,9 @@ public with sharing class githubex {
     public void method3(){
         System.debug(' hello and bye');
     }
+        public void method4(){
+        System.debug(' hello and bye and welcome to new world');
+    }
+
 
 }
