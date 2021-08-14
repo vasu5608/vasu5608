@@ -20,5 +20,9 @@ public with sharing class vscode {
     public  void examplemethod7(){
         System.debug('subtraction of two numbers');
     }
+    public  void examplemethod8(){
+        System.debug('factorial of 5');
+    }
+
 
     }
