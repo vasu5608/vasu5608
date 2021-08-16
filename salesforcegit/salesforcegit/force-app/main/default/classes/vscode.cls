@@ -32,4 +32,13 @@ public with sharing class vscode {
      public  void examplemethod11(){
         System.debug('factorial of 30 and last method');
     }
+    public  void examplemethod12(){
+        System.debug('factorial of 40 and last method');
+    }
+    public  void examplemethod13(){
+        System.debug('factorial of 50 and last method');
+    }
+    public  void examplemethod14(){
+        System.debug('factorial of 60 and last method');
+    }
     }
