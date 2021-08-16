@@ -41,4 +41,7 @@ public with sharing class vscode {
     public  void examplemethod14(){
         System.debug('factorial of 60 and last method');
     }
+    public  void examplemethod15(){
+        System.debug('factorial of 70 and last method');
+    }
     }
