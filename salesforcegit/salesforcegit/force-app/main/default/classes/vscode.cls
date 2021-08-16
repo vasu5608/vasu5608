@@ -23,6 +23,10 @@ public with sharing class vscode {
     public  void examplemethod8(){
         System.debug('factorial of 5');
     }
+    public  void examplemethod9(){
+        System.debug('factorial of 10 and last method');
+    }
+
 
 
     }
