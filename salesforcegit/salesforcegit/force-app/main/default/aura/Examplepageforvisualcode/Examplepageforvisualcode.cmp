@@ -1,0 +1,24 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name = "firstname" type= "String"/>
+    <aura:attribute name = "lastname" type= "String"/>
+    <aura:attribute name = "age" type= "Integer"/>
+    <div class="slds-page-header">
+        <div class="slds-align_absolute-center" style="height:5rem">
+            <div class="slds-text-heading_large">
+                <div class="slds-m-top_xx-large">
+                    Candidate Registration Form
+                </div>
+            </div>
+        </div>
+    </div>
+        <br/><br/>
+        <div class="slds-align_absolute-center">
+            <div class="slds-size_3-of-12">
+            </div>
+    </div>
+                
+                <lightning:input label ="FirstName"  type= "String" value="{!v.firstname}"/>
+                <lightning:input label ="LastName"  type= "String" value="{!v.lastname}"/>
+                <lightning:input label ="Age"  type= "Integer" value="{!v.age}"/>   
+                <lightning:button variant="brand" label="Submit"  iconPosition="left" onclick="{! c.handleClick }" />             
+            </aura:component>

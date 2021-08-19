@@ -1,0 +1,31 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="firstnumber" type="Integer"/>
+    <aura:attribute name="secondnumber" type="Integer"/>
+    <aura:attribute name="result" type="Integer"/>
+    <div class="slds-page-header">
+        <div class="slds-align_absolute-center" style="height:5rem">
+            <div class="slds-text-heading_large">
+                <div class="slds-m-top_xx-large">
+                     Arthemetic Operations
+                </div>
+            </div>
+        </div>
+    </div>
+        <br/><br/>
+        <div class="slds-align_absolute-center">
+            <div class="slds-size_3-of-12">
+            </div>
+        </div>
+                
+                
+                <lightning:input label="Firstno" name="firstno" type="Number" value="{!v.firstnumber}"/>
+                <lightning:input label="Secondno" name="secondno" type="Number" value="{!v.secondnumber}"/>
+                <lightning:input label="Result" name="result" type="Number" value="{!v.result}"/>
+                <lightning:buttongroup>
+                    <lightning:button label="addition" onclick="{!c.addition}"/>
+                    <lightning:button label="subtraction" onclick="{!c.subtraction}"/>
+                    <lightning:button label="divison" onclick="{!c.divison}"/>
+                    <lightning:button label="multiplication" onclick="{!c.multiplication}"/>
+                </lightning:buttongroup>
+                <lightning:button label="clear" onclick="{!c.clear}"/>
+            </aura:component>
